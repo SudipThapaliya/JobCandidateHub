@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="deu2erk1.jzz~" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JobCandidateHub.Core\JobCandidateHub.Core.csproj" />
+    <ProjectReference Include="..\JobCandidateHub.Interface\JobCandidateHub.Interface.csproj" />
+  </ItemGroup>
+
 </Project>

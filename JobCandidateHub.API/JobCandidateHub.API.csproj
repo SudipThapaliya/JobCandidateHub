@@ -20,6 +20,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\JobCandidateHub.Core\JobCandidateHub.Core.csproj" />
+    <ProjectReference Include="..\JobCandidateHub.Interface\JobCandidateHub.Interface.csproj" />
+    <ProjectReference Include="..\JobCandidateHub.Service\JobCandidateHub.Service.csproj" />
   </ItemGroup>
 
 </Project>

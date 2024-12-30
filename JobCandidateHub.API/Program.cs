@@ -1,4 +1,7 @@
 using JobCandidateHub.Core;
+using JobCandidateHub.Interface;
+using JobCandidateHub.Model;
+using JobCandidateHub.Service;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,7 +13,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<JobCandidateHubDbContext>(x => x.UseSqlite(builder.Configuration.GetConnectionString("Default")));
-
+builder.Services.AddScoped(typeof(ICRUDService<>), typeof(CRUDService<>));
+builder.Services.AddScoped<ICandidateService<CandidateModel>, CandidateService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

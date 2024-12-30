@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\JobCandidateHub.Entity\JobCandidateHub.Entity.csproj" />
+    <ProjectReference Include="..\JobCandidateHub.Model\JobCandidateHub.Model.csproj" />
+  </ItemGroup>
+
 </Project>
